@@ -1,21 +1,88 @@
-.header {
-    padding: 60px;
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .grid1 {
+    background-image: linear-gradient( rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80");
+    height: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .grid1text {
     text-align: center;
-    background-color: hotpink;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 30px;
-    background-image: url("https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-  background-repeat: no-repeat;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    color:white;
+  }
+  a:link {
+   text-decoration:none;
+  }
+  a:hover {
+   text-decoration:underline;
+  }
+ .hrline:before,
+  .hrline:after {
+      background-color: white;
+      content: "";
+      display: inline-block;
+      height: 3px;
+      position: relative;
+      vertical-align: middle;
+      width: 10%;
+      z-index: inherit;
+  }
+ .hrline:before {
+      right: 0.5em;
+      margin-left: -50%;
+  }
+  .hrline:after {
+      left: 0.5em;
+      margin-right: -50%;
+  }
+  .grid1button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    bottom:0;
+    left:50%;
+    position:absolute;
+    padding:1%;
 }
-h2 {
-    width: 100%; 
-    text-align: center; 
-    border-bottom: 1px solid #000; 
-    line-height: 0.1em;
-    margin: 10px 0 20px; 
- } 
- 
- h2 span { 
-     background:#fff; 
-     padding:0 10px; 
- }
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
